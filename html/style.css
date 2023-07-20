@@ -1,0 +1,180 @@
+body {
+	background-color:#E0E0E0;
+}
+.lbsrc {
+	margin:auto;
+	width:90%;
+	height:40px;
+	text-align:center; 
+	vertical-align:middle;
+}
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+	content: " \25B4\25BE"
+}
+.lblist {
+	margin:auto;
+	padding:0px;
+	width:1140px;
+	max-height:540px;
+	overflow-y: auto;
+
+	box-shadow:10px 10px 5px #888888;
+	border:1px solid #000000;
+	-moz-border-radius-bottomleft:9px;
+	-webkit-border-bottom-left-radius:9px;
+	border-bottom-left-radius:9px;
+	-moz-border-radius-bottomright:9px;
+	-webkit-border-bottom-right-radius:9px;
+	border-bottom-right-radius:9px;
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-right-radius:9px;
+	-moz-border-radius-topleft:9px;
+	-webkit-border-top-left-radius:9px;
+	border-top-left-radius:9px;
+	background-color:#FFFFFF;
+}
+.lblist table {
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.lblist tr th {
+	background-color:#FFFFFF;
+	position: sticky;
+	top: 0;
+}
+.lblist tr:first-child th {
+	border:0px solid #000000;
+	border-width:0px 0px 1px 0px;
+	text-align:left;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	height: 40px;
+}
+.lblist table tr:first-child th:first-child {
+	-moz-border-radius-topleft:9px;
+	-webkit-border-top-left-radius:9px;
+	border-top-left-radius:9px;
+}
+.lblist table tr:first-child th:last-child {
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-right-radius:9px;
+}
+.lblist tr:last-child td:first-child {
+	-moz-border-radius-bottomleft:9px;
+	-webkit-border-bottom-left-radius:9px;
+	border-bottom-left-radius:9px;
+}
+.lblist tr:last-child td:last-child {
+	-moz-border-radius-bottomright:9px;
+	-webkit-border-bottom-right-radius:9px;
+	border-bottom-right-radius:9px;
+}
+.lblist tr:hover td {
+	background-color:#cce6ff;
+}
+.lblist tr:first-child th:first-child {
+	border-width:0px 0px 1px 0px;
+}
+.lblist tr:first-child td:last-child {
+	border-width:0px 0px 1px 1px;
+}
+.lblist tr:last-child td {
+	border-width:0px 1px 0px 0px;
+}
+.lblist tr td:last-child {
+	border-width:0px 0px 1px 0px;
+}
+.lblist tr:last-child td:last-child {
+	border-width:0px 0px 0px 0px;
+}
+.lblist td:first-child {
+	text-align:left;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.lblist td {
+	text-align:left;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.boldtr td {
+	font-weight:bold;
+	font-style:italic;
+}
+a:visited, a:link, a:active {
+	text-decoration: none;
+	color:blue;
+}
+a:hover {
+	text-decoration: none;
+	color:black;
+}
+.button {
+	backface-visibility: hidden;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	white-space: nowrap;
+	background: linear-gradient(180deg,#f9f9f9 0%,#e0e0e0 100%);
+	border-radius: 100px;
+	border: 0.5px solid rgba(0%,0%,0%,0.2);
+	border-width: 0.5px 0.5px 0.5px 0.5px;
+	padding: 4px 22px 5px 22px;
+	box-shadow: 0px 1px 1px rgba(0%,0%,0%,0.6),0px 0px 5px rgba(255,255,255,1),0px 1px 0px 3px rgba(0,0,0,0.2),inset 0px 1px 0px rgba(255,255,255,1);
+	color: #2196F3;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	font-style: normal
+}
+.button:active {
+	color: #064579;
+	position:relative;
+	top:1px;
+}
+
+.sidenav {
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 60px;
+	left: 10px;
+	background: #ffffff;
+	overflow-x: hidden;
+	padding: 8px 0;
+	border:1px solid #000000;
+	-moz-border-radius-bottomleft:9px;
+	-webkit-border-bottom-left-radius:9px;
+	border-bottom-left-radius:9px;
+	-moz-border-radius-bottomright:9px;
+	-webkit-border-bottom-right-radius:9px;
+	border-bottom-right-radius:9px;
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-right-radius:9px;
+	-moz-border-radius-topleft:9px;
+	-webkit-border-top-left-radius:9px;
+	border-top-left-radius:9px;
+}
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #2196F3;
+	display: block;
+}
+.sidenav a:hover {
+	color: #064579;
+}
+.main {
+	margin-left: 170px; /* Same width as the sidebar + left position in px */
+	padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}

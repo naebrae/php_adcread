@@ -1,0 +1,16 @@
+version: "3.2"
+services:
+  apache_php:
+    build:
+      context: '.'
+    networks:
+      - frontend
+    ports:
+      - "1080:80"
+      - "1443:80"
+    volumes:
+      - ./html/:/var/www/html/
+networks:
+  frontend:
+volumes:
+  data:
